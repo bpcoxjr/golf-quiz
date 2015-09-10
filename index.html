@@ -5,7 +5,6 @@
 	<title>Golf's Greatest Achievements Quiz</title>
 	<link href="css/style.css" rel="stylesheet" type="css/text">
 	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Quicksand|Cabin' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/js/vendor/flexslider/css/flexslider.css" type="text/css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="assets/js/vendor/flexslider/jquery.flexslider.js"></script>
@@ -14,17 +13,17 @@
 <body>
 	<header class="banner-section">
 		<h1>Golf's Greatest Achievements</h1>
-		<h3>A Quiz by Bruce Cox<h3>
+		<h3>A Quiz by Bruce Cox</h3>
 	</header>
 	<section class="question-section">
 		<div class="flexslider">
-			<ul>
+			<ul class="slides">
 				<li>
-					<p>Who won the US Open in 2000 at Pebble Beach Golf Links by a record&nbsp;15&nbsp;shots?</p>
+					<p>He won the US Open in 2000 at Pebble Beach Golf Links by a record&nbsp;15&nbsp;shots.</p>
 					<div class="fieldcontain">
-						<ul class="controlgroup">
+						<ul class="controlGroup">
 							<li><input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked"/>
-							<label for="radio-choice-1">Jose Maria Olazabal</label></li>
+							<label for="radio-choice-1">Lee Janzen</label></li>
 				
 							<li><input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"/>
 							<label for="radio-choice-2">Tiger Woods</label></li>
@@ -33,14 +32,14 @@
 							<label for="radio-choice-3">Retief Goosen</label></li>
 
 							<li><input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"/>
-							<label for="radio-choice-4">Vijay Singh</label></li>
+							<label for="radio-choice-4">Jim Furyk</label></li>
 						</ul>
 					</div>
 				</li>
 				<li>
-					<p>The record for most consecutive birdies during The Masters is 7, held by Tiger Woods and who?</p>
+					<p>The record for most consecutive birdies during The Masters is 7, held by Tiger Woods and whom?</p>
 					<div class="fieldcontain">
-						<ul class="controlgroup">
+						<ul class="controlGroup">
 							<li><input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked"/>
 							<label for="radio-choice-1">Hale Irwin</label></li>
 				
@@ -56,9 +55,9 @@
 					</div>
 				</li>
 				<li>
-					<p>She made golf history by playing in the PGA Tour's Colonial tournament&nbsp;in&nbsp;2004&hellip;</p>
+					<p>She holds the record for being the only female golfer to make the cut in a&nbsp;PGA&nbsp;Tour&nbsp;event&nbsp;...&nbsp;</p>
 					<div class="fieldcontain">
-						<ul class="controlgroup">
+						<ul class="controlGroup">
 							<li><input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked"/>
 							<label for="radio-choice-1">Nancy Lopez</label></li>
 				
@@ -69,17 +68,53 @@
 							<label for="radio-choice-3">Michelle Wie</label></li>
 
 							<li><input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"/>
-							<label for="radio-choice-4">Stacy Lewis</label></li>
+							<label for="radio-choice-4">Babe Zaharias</label></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<p>With a victory in 1986, he became the oldest player to ever win The Masters.</p>
+					<div class="fieldcontain">
+						<ul class="controlGroup">
+							<li><input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked"/>
+							<label for="radio-choice-1">Arnold Palmer</label></li>
+				
+							<li><input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"/>
+							<label for="radio-choice-2">Fuzzy Zoeller</label></li>
+
+							<li><input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"/>
+							<label for="radio-choice-3">Jack Nicklaus</label></li>
+
+							<li><input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"/>
+							<label for="radio-choice-4">Gary Player</label></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<p>This man holds the record for most consecutive PGA Tour wins, with 11 in a row.</p>
+					<div class="fieldcontain">
+						<ul class="controlGroup">
+							<li><input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked"/>
+							<label for="radio-choice-1">Phil Mickelson</label></li>
+				
+							<li><input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"/>
+							<label for="radio-choice-2">Byron Nelson</label></li>
+
+							<li><input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"/>
+							<label for="radio-choice-3">Tiger Woods</label></li>
+
+							<li><input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"/>
+							<label for="radio-choice-4">Jack Nicklaus</label></li>
 						</ul>
 					</div>
 				</li>
 			</ul>
 		</div>
 		<div class="submit-button">
-		<input type="submit" id="submitAnswer" value="SUBMIT">
+		<input type="submit" id="submitAnswer" value="Submit">
 		</div>
-		<div class="question-counter">
-			<p><strong>Question 1 of 5</strong></p>
+		<div class="new">
+			<button>Try Again</button>
 		</div>
 	</section>
 </body>

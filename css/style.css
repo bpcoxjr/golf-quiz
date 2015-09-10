@@ -37,14 +37,14 @@ time, mark, audio, video {
 .banner-section h3 {
 	text-align: center;
 	font-size: 2em;
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	color: #FFFFFF;
 	webkit-font-smoothing: antialiased;
 	padding-bottom: 10px;
 }
 /*Question & Answer Section*/
 .question-section {
-	background-image: url(/golf-quiz/images/golfball.jpg);
+	background-image: url(/golf-quiz/images/golfcollage.gif);
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin: 0px auto;
@@ -53,13 +53,15 @@ time, mark, audio, video {
 .question-section p {
 	text-align: center;
 	font-size: 2.5em;
-	font-family: 'Cabin', sans-serif;
-	color: #FFFFFF;
+	font-family: 'Quicksand', sans-serif;
+	color: black;
 	webkit-font-smoothing: antialiased;
 	padding-top: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
-.question-counter p {
+.question-counter {
 	font-size: 2em;
 	font-family: 'Quicksand', sans-serif;
 	color: #FFFFFF;
@@ -67,6 +69,10 @@ time, mark, audio, video {
 	text-align: center;
 	padding-bottom: 280px;
 	padding-top: 15px;
+}
+
+.flexslider li {
+	list-style-type: none;
 }
 
 .question-section fieldset {
@@ -80,14 +86,40 @@ time, mark, audio, video {
 #submitAnswer {
 	width: 8em;
 	height: 2em;
-	border: none;
+	border: 2px solid red;
 	border-radius: 5px;
 	background-color: #E8E819;
 	color: #3D993D;
 	font-family: 'Cabin', sans-serif;
 	font-size: 2em;
 	webkit-font-smoothing: antialiased;
-	margin-top: 4em;
+	margin-top: 0em;
+}
+
+.new {
+	text-align: center;
+}
+
+.new button {
+	margin-top: 1em;
+	margin-bottom: 15em;
+	height: 3em;
+	width: 10em;
+	color: #3D993D;
+	background-color: #E8E819;
+	font-size: 1em;
+	font-family: 'Cabin', sans-serif;
+	webkit-font-smoothing: antialiased;
+	border: 1px solid red;
+	border-radius: 5px;
+
+}
+
+.controlGroup {
+	padding-left: 3em;
+	font-size: 2em;
+	font-family: 'Quicksand', sans-serif;
+	webkit-font-smoothing: antialiased;
 }
 
 
