@@ -3,12 +3,13 @@ var currentSlide = 0;
 var correctAnswers = [
 	1,
 	3,
-	1,
+	3,
 	2,
 	1
 ];
 
 var numberOfCorrectAnswers = 0;
+var numberOfSlides = 5;
 
 $(document).ready(function(){
 	$('.flexslider').flexslider({
@@ -17,6 +18,9 @@ $(document).ready(function(){
 		directionNav: false,
 		animationLoop: false,
 		animation: "fade",
+			before:function(slider){
+			$("#submitAnswer").attr("disabled", "disabled");
+			},
 			after:function(slider){
 			currentSlide = slider.currentSlide;
 			}
@@ -26,6 +30,7 @@ $(document).ready(function(){
 		var controlGroup = $(this);
 		var radios = controlGroup.find('input:radio');
 		radios.change(function(){
+			$("#submitAnswer").removeAttr("disabled");
 			var checkedAnswer = radios.index($(this));
 			console.log('they checked this answer: ' + checkedAnswer);
 			console.log('they are on slide number ' + currentSlide);
@@ -35,13 +40,14 @@ $(document).ready(function(){
 			}
 			console.log(numberOfCorrectAnswers);
 		});
-		alert("You got " + numberOfCorrectAnswers + " out of 5!");
 	});
 
 	$('#submitAnswer').click(function(){
-		$('.flexslider').flexslider('next');
-		if(currentSlide == 4){
-			console.log("You got " + numberOfCorrectAnswers + " out of 5!");
+		if(currentSlide < 4){
+			$('.flexslider').flexslider('next');
+		}
+		else if(currentSlide == 4){
+			alert("You got " + numberOfCorrectAnswers + " out of 5 " + ", or " + Math.round(((numberOfCorrectAnswers/numberOfSlides) * 100)) +"%!");
 		}
 	});
 

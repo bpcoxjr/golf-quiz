@@ -96,6 +96,11 @@ time, mark, audio, video {
 	margin-top: 0em;
 }
 
+#submitAnswer:disabled {
+	background-color: gray;
+	color: white;
+}
+
 .new {
 	text-align: center;
 }
